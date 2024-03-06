@@ -1,3 +1,9 @@
 export default function getResponseFromAPI() {
-  return new Promise((resolve) => resolve);
+	const promise = new Promise((resolve, reject) => {
+		resolve();
+		// eslint-disable-next-line no-unused-vars
+		reject();
+	});
+
+	return promise;
 }
