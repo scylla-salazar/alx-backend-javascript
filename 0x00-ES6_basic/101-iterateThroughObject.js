@@ -1,7 +1,7 @@
 export default function iterateThroughObject(reportWithIterator) {
   const iterator = reportWithIterator;
   let result = '';
-  
+
   let next = iterator.next();
   while (!next.done) {
     result += next.value;
@@ -10,6 +10,6 @@ export default function iterateThroughObject(reportWithIterator) {
       result += ' | ';
     }
   }
-  
+
   return result;
 }
